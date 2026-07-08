@@ -2,28 +2,28 @@ export const products = [
   {
     id: 1,
     name: "Essential Cotton T-Shirt",
-    price: 35,
+    price: 1499,
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop",
     category: "Tops"
   },
   {
     id: 2,
     name: "Classic Denim Jacket",
-    price: 120,
+    price: 3999,
     image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=800&auto=format&fit=crop",
     category: "Outerwear"
   },
   {
     id: 3,
     name: "Linen Blend Trousers",
-    price: 85,
+    price: 2499,
     image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800&auto=format&fit=crop",
     category: "Bottoms"
   },
   {
     id: 4,
     name: "Minimalist Wool Sweater",
-    price: 95,
+    price: 2999,
     image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     category: "Knitwear"
   }
@@ -66,7 +66,7 @@ export const features = [
   {
     id: 4,
     title: "Free Shipping",
-    description: "Enjoy free worldwide shipping on all orders over $100.",
+    description: "Enjoy free shipping across India on all orders over ₹4999.",
     icon: "Truck"
   }
 ];

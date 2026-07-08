@@ -37,11 +37,14 @@ export function Navbar() {
             <Link href="/about" className="text-gray-800 hover:text-black font-medium transition-colors">
               About
             </Link>
+            <Link href="/contact" className="text-gray-800 hover:text-black font-medium transition-colors">
+              Contact
+            </Link>
           </div>
 
           <div className="flex-shrink-0 flex items-center justify-center">
-            <Link href="/" className="text-2xl font-bold tracking-tighter">
-              LUMIÈRE
+            <Link href="/" className="text-xl font-bold tracking-tighter lowercase flex items-baseline gap-1">
+              unserious <span className="text-xs font-normal text-gray-500 tracking-normal">(by maverick)</span>
             </Link>
           </div>
 
