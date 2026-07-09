@@ -1,5 +1,8 @@
 import { Globe, MessageCircle, Navigation, PlayCircle } from "lucide-react";
 import Link from "next/link";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export function Footer() {
   return (
@@ -7,8 +10,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="text-xl font-bold tracking-tighter lowercase flex items-baseline gap-1 mb-4 inline-flex">
-              unserious <span className="text-xs font-normal text-gray-500 tracking-normal">(by maverick)</span>
+            <Link href="/" className={`text-2xl font-bold tracking-tight lowercase flex items-baseline gap-1 mb-4 inline-flex ${playfair.className}`}>
+              unserious <span className="text-xs font-normal text-gray-500 tracking-normal font-sans">(by maverick)</span>
             </Link>
             <p className="text-gray-500 text-sm mb-6">
               Modern clothing for the modern soul. Designed with passion, crafted with care.
@@ -37,16 +40,16 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Shop</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">New Arrivals</Link>
+                <Link href="/shop" className="text-sm text-gray-500 hover:text-black transition-colors">New Arrivals</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Bestsellers</Link>
+                <Link href="/shop" className="text-sm text-gray-500 hover:text-black transition-colors">Bestsellers</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Men</Link>
+                <Link href="/shop?category=men" className="text-sm text-gray-500 hover:text-black transition-colors">Men</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Women</Link>
+                <Link href="/shop?category=women" className="text-sm text-gray-500 hover:text-black transition-colors">Women</Link>
               </li>
             </ul>
           </div>
@@ -55,16 +58,16 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Help Center</Link>
+                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Help Center</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Shipping & Returns</Link>
+                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Shipping & Returns</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Size Guide</Link>
+                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Size Guide</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-black transition-colors">Contact Us</Link>
+                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Contact Us</Link>
               </li>
             </ul>
           </div>
