@@ -6,6 +6,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useCart } from "./CartProvider";
 import { useAuth } from "./AuthProvider";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +34,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-1 flex justify-start space-x-8">
+          <div className="flex-1 flex justify-start space-x-4 lg:space-x-8 text-sm md:text-base whitespace-nowrap overflow-hidden hidden md:flex">
             <Link href="/shop" className="text-gray-800 hover:text-black font-medium transition-colors">
               Shop
             </Link>
@@ -46,9 +49,9 @@ export function Navbar() {
             </Link>
           </div>
 
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Link href="/" className="text-xl font-bold tracking-tighter lowercase flex items-baseline gap-1">
-              unserious <span className="text-xs font-normal text-gray-500 tracking-normal">(by maverick)</span>
+          <div className="flex-shrink-0 flex items-center justify-center mx-4">
+            <Link href="/" className={`text-3xl font-bold tracking-tight lowercase ${playfair.className}`}>
+              unserious
             </Link>
           </div>
 
