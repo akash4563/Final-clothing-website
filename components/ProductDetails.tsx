@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useCart } from "./CartProvider";
+import { useRouter } from "next/navigation";
 
 type Product = {
   id: number;
@@ -15,6 +16,7 @@ export function ProductDetails({ product }: { product: Product }) {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
+  const router = useRouter();
 
   const handleAddToCart = () => {
     if (!selectedSize) return;
@@ -29,7 +31,10 @@ export function ProductDetails({ product }: { product: Product }) {
     });
 
     setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
+    setTimeout(() => {
+      setAdded(false);
+      router.push("/cart");
+    }, 800);
   };
 
   return (

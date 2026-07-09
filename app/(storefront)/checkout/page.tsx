@@ -1,12 +1,14 @@
 "use client";
 
 import { useCart } from "@/components/CartProvider";
+import { useAuth } from "@/components/AuthProvider";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function CheckoutPage() {
   const { cartItems, cartTotal, clearCart, isMounted } = useCart();
+  const { addOrder } = useAuth();
   const router = useRouter();
   const [isProcessing, setIsProcessing] = useState(false);
   const [formData, setFormData] = useState({
@@ -30,8 +32,17 @@ export default function CheckoutPage() {
 
     // Simulate payment processing
     setTimeout(() => {
-      clearCart();
       const orderId = Math.random().toString(36).substring(2, 10).toUpperCase();
+
+      addOrder({
+        orderId,
+        date: new Date().toLocaleDateString(),
+        total: cartTotal,
+        items: cartItems.reduce((acc, item) => acc + item.quantity, 0),
+        status: "Processing"
+      });
+
+      clearCart();
       router.push(`/order/${orderId}`);
     }, 2000);
   };

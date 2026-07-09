@@ -5,10 +5,12 @@ import { Search, ShoppingBag, User } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useCart } from "./CartProvider";
+import { useAuth } from "./AuthProvider";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const { cartCount, isMounted } = useCart();
+  const { cartCount, isMounted: cartMounted } = useCart();
+  const { user, isMounted: authMounted } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,12 +56,16 @@ export function Navbar() {
             <button aria-label="Search" className="text-gray-800 hover:text-black transition-colors">
               <Search className="w-5 h-5" />
             </button>
-            <button aria-label="User account" className="text-gray-800 hover:text-black transition-colors">
-              <User className="w-5 h-5" />
-            </button>
+            <Link
+              href={authMounted && user ? "/profile" : "/login"}
+              aria-label="User account"
+              className="text-gray-800 hover:text-black transition-colors"
+            >
+              <User className={`w-5 h-5 ${authMounted && user ? 'text-[#ff0055]' : ''}`} />
+            </Link>
             <Link href="/cart" aria-label="Shopping bag" className="text-gray-800 hover:text-black transition-colors relative flex items-center">
               <ShoppingBag className="w-5 h-5" />
-              {isMounted && cartCount > 0 && (
+              {cartMounted && cartCount > 0 && (
                 <span className="absolute -top-1 -right-2 bg-[#ff0055] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center shadow-md animate-in zoom-in">
                   {cartCount}
                 </span>
