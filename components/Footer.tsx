@@ -58,13 +58,13 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Help Center</Link>
+                <Link href="/help" className="text-sm text-gray-500 hover:text-black transition-colors">Help Center</Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Shipping & Returns</Link>
+                <Link href="/shipping" className="text-sm text-gray-500 hover:text-black transition-colors">Shipping & Returns</Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Size Guide</Link>
+                <Link href="/size-guide" className="text-sm text-gray-500 hover:text-black transition-colors">Size Guide</Link>
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-gray-500 hover:text-black transition-colors">Contact Us</Link>
