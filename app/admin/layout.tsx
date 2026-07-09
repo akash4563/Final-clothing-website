@@ -27,7 +27,7 @@ export default function AdminLayout({
         <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
             <div className="h-16 flex items-center px-6 border-b border-gray-200">
                 <Link href="/admin" className="text-xl font-bold font-mono tracking-tighter">
-                    unserious<span className="text-xs text-gray-500 font-sans tracking-normal ml-1">(admin)</span>
+                    unseriious<span className="text-xs text-gray-500 font-sans tracking-normal ml-1">(admin)</span>
                 </Link>
             </div>
 

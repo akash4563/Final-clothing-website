@@ -52,7 +52,7 @@ export function Navbar() {
 
           <div className="flex-shrink-0 flex items-center justify-center mx-4">
             <Link href="/" className={`text-3xl font-bold tracking-tight lowercase ${playfair.className}`}>
-              unserious
+              unseriious
             </Link>
           </div>
 

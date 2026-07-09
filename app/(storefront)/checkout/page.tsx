@@ -174,7 +174,7 @@ export default function CheckoutPage() {
                   <div key={`${item.id}-${item.size}`} className="flex gap-4 items-center">
                     <div className="relative w-16 h-16 border-2 border-black flex-shrink-0">
                       <Image src={item.image} alt={item.name} fill className="object-cover" />
-                      <span className="absolute -top-2 -right-2 bg-[#ff0055] text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full z-10 border border-white">
+                      <span className="absolute -top-2 -right-2 bg-[#ff0055] text-white text-xs font-bold min-w-5 h-5 px-1 whitespace-nowrap flex items-center justify-center rounded-full z-10 border border-white">
                         {item.quantity}
                       </span>
                     </div>

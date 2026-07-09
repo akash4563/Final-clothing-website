@@ -26,7 +26,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">The Unserious Approach</h2>
             <div className="prose prose-lg text-gray-500">
               <p className="mb-4">
-                Founded by maverick, unserious is a response to the fast-paced, disposable nature of modern fashion.
+                Founded by maverick, unseriious is a response to the fast-paced, disposable nature of modern fashion.
                 We started with a simple idea: create beautifully designed, incredibly comfortable clothing without taking ourselves too seriously.
               </p>
               <p>

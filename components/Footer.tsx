@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className={`text-2xl font-bold tracking-tight lowercase flex items-baseline gap-1 mb-4 inline-flex ${playfair.className}`}>
-              unserious <span className="text-xs font-normal text-gray-500 tracking-normal font-sans">(by maverick)</span>
+              unseriious <span className="text-xs font-normal text-gray-500 tracking-normal font-sans">(by maverick)</span>
             </Link>
             <p className="text-gray-500 text-sm mb-6">
               Modern clothing for the modern soul. Designed with passion, crafted with care.
@@ -96,7 +96,7 @@ export function Footer() {
 
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} unserious (by maverick). All rights reserved.
+            &copy; {new Date().getFullYear()} unseriious (by maverick). All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-sm text-gray-400 hover:text-gray-900">Privacy Policy</Link>

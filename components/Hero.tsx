@@ -130,11 +130,11 @@ export function Hero() {
           transition={{ repeat: Infinity, ease: "linear", duration: 15 }}
           className="whitespace-nowrap flex font-bold uppercase tracking-widest text-black text-sm sm:text-base"
         >
-          <span className="mx-4">UNSERIOUS (BY MAVERICK)</span> •
+          <span className="mx-4">UNSERIIOUS (BY MAVERICK)</span> •
           <span className="mx-4">STREETWEAR</span> •
           <span className="mx-4">NEW DROPS WEEKLY</span> •
           <span className="mx-4">FREE SHIPPING OVER ₹4999</span> •
-          <span className="mx-4">UNSERIOUS (BY MAVERICK)</span> •
+          <span className="mx-4">UNSERIIOUS (BY MAVERICK)</span> •
           <span className="mx-4">STREETWEAR</span> •
           <span className="mx-4">NEW DROPS WEEKLY</span> •
           <span className="mx-4">FREE SHIPPING OVER ₹4999</span> •

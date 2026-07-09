@@ -41,7 +41,7 @@ export function Features() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-              THE <span className="text-purple-500">UNSERIOUS</span> <br/>
+              THE <span className="text-purple-500">UNSERIIOUS</span> <br/>
               CODE
             </h2>
           </motion.div>

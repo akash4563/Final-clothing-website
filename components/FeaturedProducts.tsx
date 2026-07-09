@@ -43,9 +43,9 @@ export function FeaturedProducts() {
           >
             <Link
               href="/shop"
-              className="group flex items-center justify-center w-32 h-32 rounded-full border-4 border-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-110"
+              className="group flex items-center justify-center w-32 h-32 rounded-full border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-110"
             >
-              <span className="font-bold uppercase tracking-widest text-center text-sm group-hover:scale-110 transition-transform">
+              <span className="font-bold uppercase tracking-widest text-center text-sm text-black group-hover:text-white group-hover:scale-110 transition-transform">
                 View<br/>All
               </span>
             </Link>
@@ -101,7 +101,7 @@ export function FeaturedProducts() {
                 </div>
                 <div className="flex items-center justify-between mt-auto">
                   <p className="text-2xl font-black text-black">₹{product.price}</p>
-                  <span className="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center font-bold text-lg group-hover:bg-black group-hover:text-white transition-colors">
+                  <span className="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center font-bold text-lg text-black group-hover:bg-black group-hover:text-white transition-colors">
                     +
                   </span>
                 </div>

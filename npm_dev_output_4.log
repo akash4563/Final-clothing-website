@@ -13,3 +13,12 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
  GET /shop 200 in 136ms (next.js: 7ms, application-code: 129ms)
 [browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+✓ Compiled in 4.6s
+ GET / 200 in 811ms (next.js: 246ms, application-code: 565ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+[browser] Image with src "https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+ GET /checkout 200 in 210ms (next.js: 68ms, application-code: 142ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
