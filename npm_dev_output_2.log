@@ -30,3 +30,61 @@
 ⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
  GET /checkout 200 in 91ms (next.js: 5ms, application-code: 86ms)
 [browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET / 200 in 492ms (next.js: 58ms, application-code: 434ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="layout" pagePath="(storefron...">
+          <SegmentTrieNode>
+          <link>
+          <script>
+          <script>
+          <script>
+          <StorefrontLayout>
+            <AuthProvider>
+              <CartProvider>
+                <Navbar>
+                <div>
+                <Footer>
+                  <footer className="bg-gray-50...">
+                    <div className="max-w-7xl ...">
+                      <div className="grid grid-...">
+                        <div>
+                        <div>
+                        <div>
+                        <div>
+                          <h3>
+                          <p>
+                          <form className="flex">
+                            <input
+                              type="email"
+                              placeholder="Enter your email"
+                              className="min-w-0 flex-1 bg-white border border-gray-300 rounded-l-md px-4 py-2 text-sm..."
+                              required={true}
+-                             style={{caret-color:"transparent"}}
+                            >
+                            ...
+                      ...
+      ...
+
+[browser] Image with src "https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /shop 200 in 525ms (next.js: 111ms, application-code: 414ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+ GET /shop 200 in 381ms (next.js: 49ms, application-code: 331ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[?25h
