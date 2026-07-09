@@ -178,9 +178,9 @@ export default function CheckoutPage() {
                         {item.quantity}
                       </span>
                     </div>
-                    <div className="flex-1">
-                      <p className="font-bold text-sm uppercase leading-tight">{item.name}</p>
-                      <p className="text-gray-500 font-mono text-xs">{item.size}</p>
+                    <div className="flex-1 min-w-0 overflow-hidden">
+                      <p className="font-bold text-sm uppercase leading-tight break-words [overflow-wrap:anywhere]">{item.name}</p>
+                      <p className="text-black font-mono text-xs font-bold">Size: {item.size}</p>
                     </div>
                     <p className="font-bold">₹{item.price * item.quantity}</p>
                   </div>

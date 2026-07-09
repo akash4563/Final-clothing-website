@@ -1,0 +1,32 @@
+
+> my-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 901ms
+
+ GET / 200 in 1857ms (next.js: 671ms, application-code: 1186ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET / 200 in 167ms (next.js: 9ms, application-code: 158ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET /checkout 200 in 250ms (next.js: 50ms, application-code: 199ms)
+ GET / 200 in 160ms (next.js: 5ms, application-code: 155ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET / 200 in 142ms (next.js: 6ms, application-code: 136ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET /checkout 200 in 91ms (next.js: 3ms, application-code: 87ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET / 200 in 130ms (next.js: 4ms, application-code: 127ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET / 200 in 203ms (next.js: 4ms, application-code: 199ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET /checkout 200 in 143ms (next.js: 7ms, application-code: 136ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET / 200 in 174ms (next.js: 5ms, application-code: 169ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET / 200 in 150ms (next.js: 6ms, application-code: 143ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
+ GET /checkout 200 in 91ms (next.js: 5ms, application-code: 86ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
