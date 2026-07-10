@@ -70,7 +70,7 @@ export function Navbar() {
             <Link href="/cart" aria-label="Shopping bag" className="text-gray-800 hover:text-black transition-colors relative flex items-center">
               <ShoppingBag className="w-5 h-5" />
               {cartMounted && cartCount > 0 && (
-                <span className="absolute -top-1 -right-2 bg-[#ff0055] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center shadow-md animate-in zoom-in">
+                <span className="absolute -top-1 -right-2 bg-[#ff0055] text-white text-[10px] font-bold rounded-full min-w-[16px] h-[16px] px-1 flex items-center justify-center shadow-md animate-in zoom-in leading-none text-center">
                   {cartCount}
                 </span>
               )}

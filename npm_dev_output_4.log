@@ -22,3 +22,15 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
  GET /checkout 200 in 210ms (next.js: 68ms, application-code: 142ms)
 [browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+✓ Finished filesystem cache database compaction in 11.3s
+ GET /shop/1 200 in 1623ms (next.js: 1271ms, generate-params: 1045ms, application-code: 352ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /shop/1 200 in 159ms (next.js: 51ms, generate-params: 47ms, application-code: 108ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /shop/1 200 in 194ms (next.js: 35ms, generate-params: 30ms, application-code: 159ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /cart 200 in 109ms (next.js: 49ms, application-code: 60ms)
+ GET /checkout 200 in 102ms (next.js: 7ms, application-code: 95ms)
+[browser] Image with src "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET / 200 in 124ms (next.js: 7ms, application-code: 117ms)
+⨯ upstream image response failed for https://images.unsplash.com/photo-1523398002811-999aa8e9f5b9?q=80&w=800&auto=format&fit=crop 404
